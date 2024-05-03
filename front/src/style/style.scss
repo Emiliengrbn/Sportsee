@@ -1,0 +1,89 @@
+@import "reset.scss";
+@import "sidebar.scss";
+@import "nutrients.scss";
+@import "dailyActivity.scss";
+@import "sessionsTime.scss";
+@import "performances.scss";
+@import "score.scss";
+
+// $primary: #000;
+// $secondary: #819299;
+
+* {
+    font-family: "Roboto", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    height: 10vh;
+    font-size: 18px;
+    font-weight: 500;
+
+    img {
+        width: 150px;
+    }
+
+    p {
+        cursor: pointer;
+    }
+}
+
+main {
+    display: flex;
+    padding-top: 100px;
+
+    .main-section {
+    padding: 25px 0 0 125px;
+    width: 100%;
+    }
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+}
+
+
+.title-section {
+
+    .title {
+        font-size: 48px;
+        font-weight: 500;
+        padding-bottom: 5px;
+    
+        span {
+            color: red;
+        }
+    }
+
+
+}
+
+.charts-section {
+    width: 70%;
+}
+
+.small_charts-container {
+  display: flex;
+  justify-content: space-between;
+    margin-top: 25px;
+    
+    .small_chart {
+        width: 265px;
+        height: 263px;
+        border-radius: 5px;
+    }
+}

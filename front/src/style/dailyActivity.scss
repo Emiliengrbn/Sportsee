@@ -1,0 +1,47 @@
+.daily_activity {
+    background-color: #FBFBFB;
+    border-radius: 10px;
+}
+
+.custom_tootlip {
+    background-color: #E60000;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px ;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.custom_legend {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 25px 0 25px;
+
+    .legend-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .legend {
+            display: flex;
+            align-items: center;
+        }
+
+        .circle {
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .calories .circle {
+            background-color: red;
+        }
+    }
+}

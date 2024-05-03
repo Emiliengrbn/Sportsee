@@ -1,0 +1,282 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  z-index: -10;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  width: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 75px;
+}
+.sidebar .sidebar-nav {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.sidebar .sidebar-nav .sidebar-nav-element {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.copyright {
+  transform: rotate(-90deg);
+  width: max-content;
+  font-size: 12px;
+}
+
+.nutrients {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+.nutrients .energy img {
+  background-color: rgba(255, 0, 0, 0.07);
+}
+.nutrients .protein img {
+  background-color: rgba(74, 184, 255, 0.1);
+}
+.nutrients .carbs img {
+  background-color: rgba(249, 206, 35, 0.1);
+}
+.nutrients .fat img {
+  background-color: rgba(253, 81, 129, 0.1);
+}
+.nutrients .nutrients-element {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  background-color: #FBFBFB;
+  padding: 25px;
+  border-radius: 10px;
+}
+.nutrients .nutrients-element .nutrients-element-image {
+  object-fit: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.nutrients .nutrients-element .nutrients-element-description-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.daily_activity {
+  background-color: #FBFBFB;
+  border-radius: 10px;
+}
+
+.custom_tootlip {
+  background-color: #E60000;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.custom_legend {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 25px 0 25px;
+}
+.custom_legend .legend-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.custom_legend .legend-container .legend {
+  display: flex;
+  align-items: center;
+}
+.custom_legend .legend-container .circle {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.custom_legend .legend-container .calories .circle {
+  background-color: red;
+}
+
+.sessions_time {
+  background-color: red;
+  position: relative;
+}
+.sessions_time .sessions_time-title {
+  color: #fff;
+  opacity: 50.4%;
+  font-weight: 500;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.sessions_time-custom_tootlip {
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.performances {
+  background-color: rgb(40, 45, 48);
+}
+
+.score {
+  position: relative;
+  background-color: #FBFBFB;
+}
+.score .score-title {
+  font-weight: 500;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.score .score-description {
+  position: absolute;
+  top: 38%;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9B9EAC;
+  font-weight: 500;
+}
+.score .score-description .percent {
+  font-weight: 800;
+  font-size: 24px;
+  color: #000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  height: 10vh;
+  font-size: 18px;
+  font-weight: 500;
+}
+header img {
+  width: 150px;
+}
+header p {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  padding-top: 100px;
+}
+main .main-section {
+  padding: 25px 0 0 125px;
+  width: 100%;
+}
+
+.dashboard {
+  display: flex;
+  align-items: center;
+}
+
+.title-section .title {
+  font-size: 48px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.title-section .title span {
+  color: red;
+}
+
+.charts-section {
+  width: 70%;
+}
+
+.small_charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.small_charts-container .small_chart {
+  width: 265px;
+  height: 263px;
+  border-radius: 5px;
+}
