@@ -5,7 +5,8 @@
     .score-title {
         font-weight: 500;
         position: absolute;
-        top: 25px;
+        font-size: 18px;
+        top: 15px;
         left: 25px;
     }
 
@@ -23,6 +24,7 @@
             font-weight: 800;
             font-size: 24px;
             color: #000;
+            padding-bottom: 5px;
         }
     }
 }

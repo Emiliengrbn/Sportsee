@@ -19,7 +19,6 @@ export class APIService {
         return response.json();
       })
       .then((data) => {
-        console.log(data.data);
         return data.data;
       })
       .catch((error) => {
@@ -40,8 +39,7 @@ export class APIService {
         return response.json();
       })
       .then((data) => {
-        console.log(data.data);
-        return data.data; // Retourne les données récupérées
+        return data.data;
       })
       .catch((error) => {
         console.error("Il y a eu un problème avec la requête Fetch:", error);
@@ -61,8 +59,7 @@ export class APIService {
         return response.json();
       })
       .then((data) => {
-        console.log(data.data);
-        return data.data; // Retourne les données récupérées
+        return data.data;
       })
       .catch((error) => {
         console.error("Il y a eu un problème avec la requête Fetch:", error);
@@ -82,8 +79,7 @@ export class APIService {
         return response.json();
       })
       .then((data) => {
-        console.log(data.data);
-        return data.data; // Retourne les données récupérées
+        return data.data;
       })
       .catch((error) => {
         console.error("Il y a eu un problème avec la requête Fetch:", error);

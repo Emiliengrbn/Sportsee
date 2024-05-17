@@ -5,10 +5,10 @@ import Sidebar from "./components/Sidebar.jsx"
 import DailyActivity from "./components/DailyActivity.jsx";
 import Nutrients from "./components/Nutrients.jsx";
 import SessionsTime from "./components/SessionsTime.jsx";
-import { MockService } from "./data/MockService.js"; // eslint-disable-line no-unused-vars
-import { APIService } from "./data/APIService.js";
 import Performances from "./components/Performances.jsx";
 import Score from "./components/Score.jsx";
+import { APIService } from "./data/APIService.js"; // eslint-disable-line no-unused-vars
+import { MockService } from "./data/MockService.js"; // eslint-disable-line no-unused-vars
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       const service = new APIService(12)
+      // const service = new MockService() // Mocked data
       try {
         const [user, activity, sessions, performance] = await Promise.all([
           service.getUser(),
@@ -44,7 +45,21 @@ function App() {
   }
 
   if(!userData || !activityData || !sessionsData || !performanceData) {
-    return <div>Chargement en cours...</div>
+    return <div className="App">
+              <Header/>
+
+              <main>
+                <Sidebar/>
+
+                <div className="main-section">
+                  <div className="error error_title">Une erreur est survenue : 
+                    <div className="error_message">
+                      Les données n'ont pas pu être chargées
+                    </div> 
+                  </div>
+                </div>
+              </main>
+            </div>
   }
 
   return (

@@ -30,18 +30,17 @@ function SessionsTime({data}) {
 
       const CustomCursor = ({ points, width, height }) => {
         const {x, y} = points[0]
-        const left = x - width - 10
         return (
-        <Rectangle 
-        x={left}
-        y={y}
-        width={width+10}
-        height={height+100} 
-        stroke='transparent'
-        fill='black'
-        fillOpacity="0.18"
-        />
-      )
+          <Rectangle 
+          x={x}
+          y={y}
+          width={width+10}
+          height={height+100} 
+          stroke='transparent'
+          fill='black'
+          fillOpacity="0.18"
+          />
+        )
       }
 
       const gradientColor = `url(#colorUv)`;

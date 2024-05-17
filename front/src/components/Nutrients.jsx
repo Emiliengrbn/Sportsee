@@ -14,20 +14,24 @@ import fat from "../assets/svg/fat.svg"
  * @returns {React.JSX.Element}
  */
 function Nutrients({data}) {
+
+    const formatNumber = (num) => {
+        return num.toLocaleString('en-EN');
+      };
     
     return (
         <div className="nutrients"> 
             <div className="nutrients-element energy" >
-                <Card img={energy} number={`${data.keyData.calorieCount}kCal`} description={"Calories"}/>
+                <Card img={energy} number={`${formatNumber(data.keyData.calorieCount)}kCal`} description={"Calories"}/>
             </div>
             <div className="nutrients-element protein" >
-                <Card img={protein} number={`${data.keyData.proteinCount}g`} description={"Protéines"}/>
+                <Card img={protein} number={`${formatNumber(data.keyData.proteinCount)}g`} description={"Protéines"}/>
             </div>
             <div className="nutrients-element carbs" >
-                <Card img={carbs} number={`${data.keyData.carbohydrateCount}g`} description={"Glucides"}/>
+                <Card img={carbs} number={`${formatNumber(data.keyData.carbohydrateCount)}g`} description={"Glucides"}/>
             </div>
             <div className="nutrients-element fat" >
-                <Card img={fat} number={`${data.keyData.lipidCount}g`} description={"Lipides"}/>
+                <Card img={fat} number={`${formatNumber(data.keyData.lipidCount)}g`} description={"Lipides"}/>
             </div>
         </div>
     )

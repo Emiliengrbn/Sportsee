@@ -24,11 +24,11 @@ function DailyActivity({data}) {
       const renderLegend = ({ payload }) => {
         return (
             <div className="custom_legend">
-                <p className="legend-title">Activité quotidienne</p>
+                <p className="legend-title bold">Activité quotidienne</p>
                 <ul className='legend-container'>
                     {
                     payload.map((entry, index) => (
-                        <li key={`item-${index}`} className={` legend ${entry.value === "calories" ? "calories" : "kilogram"}`}>
+                        <li key={`item-${index}`} className={` legend bold ${entry.value === "calories" ? "calories" : "kilogram"}`}>
                             <span className="circle"></span>
                             {entry.value === "calories" ? "Calories brûlées (kCal)" : "Poids (kg)"}
                         </li>
